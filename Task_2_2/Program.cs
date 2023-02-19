@@ -10,7 +10,6 @@ Console.Clear();
 
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
-int num3 = 0;
 int num_tmp = 0;
 if (num < 100)
 {
@@ -24,6 +23,5 @@ else
     {
         num_tmp = num_tmp / 10;
     }
-    num3 = num_tmp % 10;
-    Console.WriteLine($"{num} -> {num3}");
+    Console.WriteLine($"{num} -> {num_tmp % 10}");
 }
